@@ -1,4 +1,8 @@
 <?php
+define("MYAPP", true);
+require_once 'funcs.php';
+
+
 $title = 'My Blog :: About';
 
 $posts =  "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cum, dolore enim eos laborum, molestiae, porro quae sequi suscipit tenetur veniam vitae. Id ipsam numquam ratione, recusandae suscipit velit vero!</p>
@@ -27,4 +31,4 @@ $resents_posts = [
         'slug' => lcfirst(str_replace(' ', '-', 'And a fifth one')),
     ],
 ];
-require_once 'about.tpl.php';
+require_once 'app/views/about.tpl.php';

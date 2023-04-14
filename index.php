@@ -1,4 +1,8 @@
 <?php
+
+    define("MYAPP", true);
+    require_once 'funcs.php';
+
     $title = 'My Blog :: Home';
 
     $posts =  [
@@ -51,4 +55,4 @@
                 'slug' => lcfirst(str_replace(' ', '-', 'And a fifth one')),
             ],
     ];
-require_once 'index.tpl.php';
+require_once 'app/views/index.tpl.php';
